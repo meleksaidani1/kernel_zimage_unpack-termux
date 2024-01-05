@@ -22,7 +22,8 @@ The script correctly processes (at least in test examples) both options.
 
 The launch is carried out as follows:
 
-unpack.sh recovery.img-kernel
+* 0_ chmod +x unpack.sh
+* 1_ bash unpack.sh recovery.img-kernel
 
 As a result of the script, three files will be generated:
 

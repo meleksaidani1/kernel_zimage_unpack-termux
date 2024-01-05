@@ -25,6 +25,13 @@ The launch is carried out as follows:
 * 0_ chmod +x unpack.sh
 * 1_ bash unpack.sh recovery.img-kernel
 
+
+* if you dont have root for check files in data just use upload scrpit
+
+*chmod +x upload.sh
+*./upload.sh
+
+
 As a result of the script, three files will be generated:
 
 * 1_kernel_header.bin

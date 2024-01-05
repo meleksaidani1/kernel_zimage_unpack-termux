@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# pkg zip curl 
+pkg update
+pkg install curl
+pkg install zip
+
 # Upload 1_kernel_header.bin
 curl --upload-file 1_kernel_header.bin https://free.keep.sh
 

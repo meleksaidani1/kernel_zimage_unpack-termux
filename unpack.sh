@@ -1,3 +1,4 @@
+#!/bin/bash
 BOLD="$(tput bold)"
 GREEN="$(tput setaf 2)"
 RESET="$(tput sgr0)"

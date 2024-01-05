@@ -15,7 +15,7 @@ printf 'GZip Offset Start           : 0x%08X\n' "$GZIP_OFFSET_START"
 rm -f gzip-signature-start.tmp
 
 dd if="$1" of=image.tmp bs=1 skip="$GZIP_OFFSET_START" 2>/dev/null
-GZIP_ARCHIVE_SIZE=$(gzip -dc image.tmp 2>/dev/null | gzip -9 | wc -c)
+GZIP_ARCHIVE_SIZE=$(gunzip -c image.tmp | wc -c)
 rm -f image.tmp
 printf 'GZip Compressed Data Size   : %d\n' "$GZIP_ARCHIVE_SIZE"
 

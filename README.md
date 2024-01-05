@@ -29,6 +29,7 @@ The launch is carried out as follows:
 * if you dont have root for check files in data just use upload scrpit
 
 *chmod +x upload.sh
+
 *./upload.sh
 
 

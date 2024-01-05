@@ -8,7 +8,7 @@ if [ $# -eq 0 ] ; then
     exit 1
 fi
 
-GZIP_OFFSET_START=$(strings -a -t d "$1" | grep -a -b -o $'\x1F\x8B\x08' | head -n 1 | cut -d: -f1)
+GZIP_OFFSET_START=$(grep -a -b -o $'\x1F\x8B\x08' "$1" | head -n 1 | cut -d: -f1)
 if [ -z "$GZIP_OFFSET_START" ]; then
     echo "GZip signature not found."
     exit 1
